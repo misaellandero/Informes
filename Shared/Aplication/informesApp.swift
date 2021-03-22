@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct informesApp: App {
+    //View Model
     let persistenceController = PersistenceController.shared
 
     var body: some Scene {
