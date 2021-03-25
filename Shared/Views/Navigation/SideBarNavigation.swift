@@ -23,10 +23,12 @@ struct SideBarNavigation: View {
                 }
             }
             .listStyle(SidebarListStyle())
+            .frame(width: 200)
             
             Text("Elige una opcion")
-            
+                .frame(width: 300)
             Text("Elige una opcion")
+                .frame(width: 400)
             
         }
         .navigationTitle("App de informes")

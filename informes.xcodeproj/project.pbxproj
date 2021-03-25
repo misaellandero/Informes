@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F2B3FD2260C05A100E4FA7D /* ReportNewForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2B3FD1260C05A100E4FA7D /* ReportNewForm.swift */; };
+		7F2B3FD7260C0B9900E4FA7D /* ReportNewForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2B3FD1260C05A100E4FA7D /* ReportNewForm.swift */; };
+		7F2B3FDB260C0CD100E4FA7D /* ReportsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2B3FDA260C0CD100E4FA7D /* ReportsRow.swift */; };
+		7F2B3FDE260C0EA000E4FA7D /* ReportsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2B3FDA260C0CD100E4FA7D /* ReportsRow.swift */; };
 		7FD8B4F32608FD0600822960 /* informes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7FD8B4DD2608FCFB00822960 /* informes.xcdatamodeld */; };
 		7FD8B4F42608FD0600822960 /* informes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7FD8B4DD2608FCFB00822960 /* informes.xcdatamodeld */; };
 		7FD8B4F52608FD0600822960 /* informesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD8B4DF2608FCFB00822960 /* informesApp.swift */; };
@@ -44,6 +48,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F2B3FD1260C05A100E4FA7D /* ReportNewForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportNewForm.swift; sourceTree = "<group>"; };
+		7F2B3FDA260C0CD100E4FA7D /* ReportsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsRow.swift; sourceTree = "<group>"; };
 		7FD8B4DE2608FCFB00822960 /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
 		7FD8B4DF2608FCFB00822960 /* informesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = informesApp.swift; sourceTree = "<group>"; };
 		7FD8B4E02608FCFB00822960 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -90,6 +96,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F2B3FD0260C053200E4FA7D /* Report */ = {
+			isa = PBXGroup;
+			children = (
+				7F2B3FD1260C05A100E4FA7D /* ReportNewForm.swift */,
+				7F2B3FDA260C0CD100E4FA7D /* ReportsRow.swift */,
+			);
+			path = Report;
+			sourceTree = "<group>";
+		};
 		7FD8B4D72608FCF800822960 = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +168,7 @@
 		7FD8B5082608FEC100822960 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				7F2B3FD0260C053200E4FA7D /* Report */,
 				7FD8B54D2609122B00822960 /* Publisher */,
 				7FD8B54C2609121C00822960 /* Navigation */,
 			);
@@ -333,10 +349,12 @@
 				7FD8B4F52608FD0600822960 /* informesApp.swift in Sources */,
 				7FD8B5132609034200822960 /* Report+CoreDataProperties.swift in Sources */,
 				7FD8B52B260907B100822960 /* DateFormatterExtension.swift in Sources */,
+				7F2B3FDB260C0CD100E4FA7D /* ReportsRow.swift in Sources */,
 				7FD8B54F2609124E00822960 /* PublishersList.swift in Sources */,
 				7FD8B559260912A600822960 /* PublishersNewForm.swift in Sources */,
 				7FD8B53626090E2600822960 /* Publisher+CoreDataProperties.swift in Sources */,
 				7FD8B5152609034200822960 /* Publisher+CoreDataClass.swift in Sources */,
+				7F2B3FD2260C05A100E4FA7D /* ReportNewForm.swift in Sources */,
 				7FD8B5542609127A00822960 /* PublishersRow.swift in Sources */,
 				7FD8B55E26091C0000822960 /* PublishersDetail.swift in Sources */,
 				7FD8B4F92608FD0600822960 /* Persistence.swift in Sources */,
@@ -355,10 +373,12 @@
 				7FD8B4F62608FD0600822960 /* informesApp.swift in Sources */,
 				7FD8B5142609034200822960 /* Report+CoreDataProperties.swift in Sources */,
 				7FD8B52C260907B100822960 /* DateFormatterExtension.swift in Sources */,
+				7F2B3FDE260C0EA000E4FA7D /* ReportsRow.swift in Sources */,
 				7FD8B5502609124E00822960 /* PublishersList.swift in Sources */,
 				7FD8B55A260912A600822960 /* PublishersNewForm.swift in Sources */,
 				7FD8B53726090E2600822960 /* Publisher+CoreDataProperties.swift in Sources */,
 				7FD8B5162609034200822960 /* Publisher+CoreDataClass.swift in Sources */,
+				7F2B3FD7260C0B9900E4FA7D /* ReportNewForm.swift in Sources */,
 				7FD8B5552609127A00822960 /* PublishersRow.swift in Sources */,
 				7FD8B55F26091C0000822960 /* PublishersDetail.swift in Sources */,
 				7FD8B4FA2608FD0600822960 /* Persistence.swift in Sources */,

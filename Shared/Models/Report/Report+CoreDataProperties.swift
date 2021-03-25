@@ -22,6 +22,7 @@ extension Report {
     @NSManaged public var pubs: Int16
     @NSManaged public var returnVisits: Int16
     @NSManaged public var studies: Int16
+    @NSManaged public var videos: Int16
     @NSManaged public var observations: String?
     @NSManaged public var publisher: Publisher?
 
@@ -31,11 +32,23 @@ extension Report {
     public var wrappedId: UUID {
         id ?? UUID()
     }
-    
+    // Wrapped observations
+    public var wrappedObservations: String {
+        observations ?? "Sin observaciones"
+    }
     // Wrapped date
     public var wrappedDate : Date {
         date ?? Date()
     }
+    
+    // MARK: - Formated Dates
+    // date formated
+    public var dateFormated : String {
+        //DateFormatter extension
+        return DateFormatter.mediumDateTimeFormatter.string(from: wrappedDate)
+    }
+    
+     
     
     
 }

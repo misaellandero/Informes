@@ -31,7 +31,7 @@ struct PublishersList: View {
             
         }
         .toolbar{
-            ToolbarItem(placement: .principal){
+            ToolbarItem(placement: .primaryAction){
                 Button(action:showForm){
                     Label("Nuevo", systemImage: "person.fill.badge.plus")
                 }

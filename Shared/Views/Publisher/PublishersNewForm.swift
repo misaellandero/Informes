@@ -92,8 +92,4 @@ struct PublishersNewForm: View {
     }
 }
 
-struct PublishersNewForm_Previews: PreviewProvider {
-    static var previews: some View {
-        PublishersNewForm()
-    }
-}
+ 
