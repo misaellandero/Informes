@@ -19,14 +19,14 @@ struct TabBarNavigation: View {
             }
             
             NavigationView{
-                Text("Informes")
+                ReportList()
             }
             .navigationTitle("Informes")
             .tabItem{
                 Label("Informes", systemImage: "chart.bar.doc.horizontal")
             }
             NavigationView{
-                Text("Reportes")
+                SummaryOptionsList()
             }
             .navigationTitle("Reportes")
             .tabItem{

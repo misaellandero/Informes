@@ -11,6 +11,12 @@
 		7F2B3FD7260C0B9900E4FA7D /* ReportNewForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2B3FD1260C05A100E4FA7D /* ReportNewForm.swift */; };
 		7F2B3FDB260C0CD100E4FA7D /* ReportsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2B3FDA260C0CD100E4FA7D /* ReportsRow.swift */; };
 		7F2B3FDE260C0EA000E4FA7D /* ReportsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2B3FDA260C0CD100E4FA7D /* ReportsRow.swift */; };
+		7F687167261FD886007126E1 /* ReportList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F687166261FD886007126E1 /* ReportList.swift */; };
+		7F687168261FD886007126E1 /* ReportList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F687166261FD886007126E1 /* ReportList.swift */; };
+		7F68716D261FD9D3007126E1 /* SummaryOptionsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F68716C261FD9D3007126E1 /* SummaryOptionsList.swift */; };
+		7F68716E261FD9D3007126E1 /* SummaryOptionsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F68716C261FD9D3007126E1 /* SummaryOptionsList.swift */; };
+		7F687173261FDBEA007126E1 /* AverageHoursDateRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F687172261FDBEA007126E1 /* AverageHoursDateRange.swift */; };
+		7F687174261FDBEA007126E1 /* AverageHoursDateRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F687172261FDBEA007126E1 /* AverageHoursDateRange.swift */; };
 		7FD8B4F32608FD0600822960 /* informes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7FD8B4DD2608FCFB00822960 /* informes.xcdatamodeld */; };
 		7FD8B4F42608FD0600822960 /* informes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7FD8B4DD2608FCFB00822960 /* informes.xcdatamodeld */; };
 		7FD8B4F52608FD0600822960 /* informesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD8B4DF2608FCFB00822960 /* informesApp.swift */; };
@@ -50,6 +56,9 @@
 /* Begin PBXFileReference section */
 		7F2B3FD1260C05A100E4FA7D /* ReportNewForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportNewForm.swift; sourceTree = "<group>"; };
 		7F2B3FDA260C0CD100E4FA7D /* ReportsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsRow.swift; sourceTree = "<group>"; };
+		7F687166261FD886007126E1 /* ReportList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportList.swift; sourceTree = "<group>"; };
+		7F68716C261FD9D3007126E1 /* SummaryOptionsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryOptionsList.swift; sourceTree = "<group>"; };
+		7F687172261FDBEA007126E1 /* AverageHoursDateRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AverageHoursDateRange.swift; sourceTree = "<group>"; };
 		7FD8B4DE2608FCFB00822960 /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
 		7FD8B4DF2608FCFB00822960 /* informesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = informesApp.swift; sourceTree = "<group>"; };
 		7FD8B4E02608FCFB00822960 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -101,8 +110,26 @@
 			children = (
 				7F2B3FD1260C05A100E4FA7D /* ReportNewForm.swift */,
 				7F2B3FDA260C0CD100E4FA7D /* ReportsRow.swift */,
+				7F687166261FD886007126E1 /* ReportList.swift */,
 			);
 			path = Report;
+			sourceTree = "<group>";
+		};
+		7F68716B261FD9BA007126E1 /* Summary */ = {
+			isa = PBXGroup;
+			children = (
+				7F687171261FDBAE007126E1 /* SummaryReports */,
+				7F68716C261FD9D3007126E1 /* SummaryOptionsList.swift */,
+			);
+			path = Summary;
+			sourceTree = "<group>";
+		};
+		7F687171261FDBAE007126E1 /* SummaryReports */ = {
+			isa = PBXGroup;
+			children = (
+				7F687172261FDBEA007126E1 /* AverageHoursDateRange.swift */,
+			);
+			path = SummaryReports;
 			sourceTree = "<group>";
 		};
 		7FD8B4D72608FCF800822960 = {
@@ -168,6 +195,7 @@
 		7FD8B5082608FEC100822960 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				7F68716B261FD9BA007126E1 /* Summary */,
 				7F2B3FD0260C053200E4FA7D /* Report */,
 				7FD8B54D2609122B00822960 /* Publisher */,
 				7FD8B54C2609121C00822960 /* Navigation */,
@@ -360,6 +388,9 @@
 				7FD8B4F92608FD0600822960 /* Persistence.swift in Sources */,
 				7FD8B4F32608FD0600822960 /* informes.xcdatamodeld in Sources */,
 				7FD8B4F72608FD0600822960 /* ContentView.swift in Sources */,
+				7F68716D261FD9D3007126E1 /* SummaryOptionsList.swift in Sources */,
+				7F687167261FD886007126E1 /* ReportList.swift in Sources */,
+				7F687173261FDBEA007126E1 /* AverageHoursDateRange.swift in Sources */,
 				7FD8B5112609034200822960 /* Report+CoreDataClass.swift in Sources */,
 				7FD8B546260910B600822960 /* TabBarNavigation.swift in Sources */,
 			);
@@ -384,6 +415,9 @@
 				7FD8B4FA2608FD0600822960 /* Persistence.swift in Sources */,
 				7FD8B4F42608FD0600822960 /* informes.xcdatamodeld in Sources */,
 				7FD8B4F82608FD0600822960 /* ContentView.swift in Sources */,
+				7F68716E261FD9D3007126E1 /* SummaryOptionsList.swift in Sources */,
+				7F687168261FD886007126E1 /* ReportList.swift in Sources */,
+				7F687174261FDBEA007126E1 /* AverageHoursDateRange.swift in Sources */,
 				7FD8B5122609034200822960 /* Report+CoreDataClass.swift in Sources */,
 				7FD8B547260910B600822960 /* TabBarNavigation.swift in Sources */,
 			);

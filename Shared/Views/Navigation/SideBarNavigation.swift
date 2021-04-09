@@ -15,10 +15,10 @@ struct SideBarNavigation: View {
                 NavigationLink(destination: PublishersList()){
                     Label("Publicadores", systemImage: "person.2.fill")
                 }
-                NavigationLink(destination: Text("Informes")){
+                NavigationLink(destination: ReportList()){
                     Label("Informes", systemImage: "chart.bar.doc.horizontal")
                 }
-                NavigationLink(destination: Text("Reportes")){
+                NavigationLink(destination: SummaryOptionsList()){
                     Label("Reportes", systemImage: "chart.pie.fill")
                 }
             }

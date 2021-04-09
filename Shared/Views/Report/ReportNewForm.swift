@@ -26,22 +26,20 @@ struct ReportNewForm: View {
     
     var body: some View {
         List{
-            Section(header: Text("Datos del iforme") ){
+           // Section(header: Text("Datos del iforme") ){
                 DatePicker("Fecha de informe", selection: $date)
                 
-                Stepper("Publicaciones", value: $pubs, step: 1)
-                
-                Stepper("Videos", value: $studies, step: 1)
-                
-                Stepper("Horas", value: $hours, in: 0...800 , step: 0.25)
-                Stepper("Revisitas", value: $returnVisits, step: 1)
-                Stepper("Estudios", value: $studies, step: 1)
+                Stepper("Publicaciones \(pubs)", value: $pubs, step: 1)
+                Stepper("Videos \(studies)", value: $studies, step: 1)
+                Stepper("Horas \(String(format: "%.2f", hours))", value: $hours, in: 0...800 , step: 0.25)
+                Stepper("Revisitas \(returnVisits)", value: $returnVisits, step: 1)
+                Stepper("Estudios \(studies)", value: $studies, step: 1)
                 TextField("Observaciones", text: $observations)
-            }
+            //}
              
             Section{
                 #if os(iOS)
-                Button(action:savePublisher){
+                Button(action:saveReport){
                     HStack{
                         Spacer()
                         Text("\(Image(systemName: "plus.circle")) Guardar")
@@ -57,7 +55,7 @@ struct ReportNewForm: View {
                             Spacer()
                             Text("\(Image(systemName: "plus.circle")) Guardar")
                             Spacer()
-                        }.foregroundColor(.white)
+                        }
                     }
                     .accentColor(Color.accentColor)
                 }

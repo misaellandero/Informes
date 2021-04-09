@@ -10,7 +10,7 @@ import SwiftUI
 import Foundation
 import CoreData
 
-enum PrivilegesOfService : String, CaseIterable {
+public enum PrivilegesOfService : String, CaseIterable {
     case publisher = "Publisher", auxPioner = "Auxiliary", regPioner = "Pioner"
     var localizedName: LocalizedStringKey { LocalizedStringKey(rawValue) }
 }
@@ -48,6 +48,17 @@ extension Publisher {
     // Wrapped dedication
     public var wrappedDedicationDate : Date {
         dedicationDate ?? Date()
+    }
+    
+    // Wrapped Privilege Service
+    public var wrappedPrivilegeServiceEnum : PrivilegesOfService {
+        
+        let privileges = [PrivilegesOfService.publisher, PrivilegesOfService.auxPioner, PrivilegesOfService.regPioner]
+        
+        let privilege = Int(privilegeService)
+        
+        return privileges[privilege]
+    
     }
     
     // Wrapped Privilege Service
@@ -92,7 +103,23 @@ extension Publisher {
             $0.wrappedDate > $1.wrappedDate
         }
     }
-     
+    
+    
+    // MARK: - Summary request
+    
+    func averageHours(initialDate: Date, finalDate: Date)-> Double {
+        var totalHours = 0.0
+        var reportCount = 0.0
+        for report in reportsArray {
+            if report.wrappedDate >= initialDate &&  report.wrappedDate <= finalDate {
+                totalHours += report.hours
+                reportCount += 1
+            }
+        }
+        var average = totalHours/reportCount
+        return average
+    }
+    
 }
 
 // MARK: Generated accessors for reports
